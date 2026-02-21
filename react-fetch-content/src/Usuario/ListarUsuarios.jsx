@@ -1,9 +1,9 @@
 import { useState, useEffect } from "react";
 import UsuarioCard from "./UsuarioCard";
-import './listarusuarios.css';
+import "./listarusuarios.css";
 
 export default function ListarUsuarios() {
-    const [usuarios, setUsuarios] = useState([]);
+  const [usuarios, setUsuarios] = useState([]);
 
   useEffect(() => {
     fetch("https://jsonplaceholder.typicode.com/users")
@@ -12,11 +12,13 @@ export default function ListarUsuarios() {
   });
 
   return (
-    <div>
+    <>
       <h2 className="title">Usuarios</h2>
-      {usuarios.map((usuario) => (
-        <UsuarioCard key={usuario.id} usuario={usuario} />
-      ))}
-    </div>
-  ); 
+      <div className="users-container">
+        {usuarios.map((usuario) => (
+          <UsuarioCard key={usuario.id} usuario={usuario} />
+        ))}
+      </div>
+    </>
+  );
 }

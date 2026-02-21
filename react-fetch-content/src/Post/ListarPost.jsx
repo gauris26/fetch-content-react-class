@@ -23,7 +23,7 @@ const ListarPost = () =>{
 
     return (
         <>
-            <h2 className="title">Posts</h2>
+            <h2 className="title">Posts - Sebastian Cruz</h2>
             <div className="container">
             {data?.filter((data)=> (data.id <= 25)).map(post=> (
                 <PostCard key={post.id} post={post} />

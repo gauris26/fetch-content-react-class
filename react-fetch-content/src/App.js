@@ -1,11 +1,11 @@
-
-import './App.css';
-import ListarUsuarios from './Usuario/ListarUsuarios';
-import ListarPost from './Post/ListarPost';
+import "./App.css";
+import ListarUsuarios from "./Usuario/ListarUsuarios";
+import ListarPost from "./Post/ListarPost";
 
 function App() {
   return (
     <>
+      <ListarUsuarios />
       <ListarPost />
     </>
   );
