@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import UsuarioCard from "./UsuarioCard";
+import './listarusuarios.css';
 
 export default function ListarUsuarios() {
     const [usuarios, setUsuarios] = useState([]);
@@ -12,7 +13,7 @@ export default function ListarUsuarios() {
 
   return (
     <div>
-      <h2>Usuarios</h2>
+      <h2 className="title">Usuarios</h2>
       {usuarios.map((usuario) => (
         <UsuarioCard key={usuario.id} usuario={usuario} />
       ))}
