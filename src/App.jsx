@@ -19,7 +19,7 @@ function App() {
         <div>
           <button onClick={cerrarSesion}>Cerrar sesión</button>
           <Dashboard />
-          
+
         </div>
       ) : (
         <Login iniciarSesion={iniciarSesion} />
