@@ -1,0 +1,33 @@
+.fondo {
+  padding: 20px;
+  background-color: #f4f4f4;
+
+}
+
+.titulo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 30px;
+  margin: 50px;
+  
+}
+
+
+.card {
+  background-color: rgb(0, 0, 0, 0.1);
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.email {
+  font-size: 16px;
+  color: #085790;
+  margin-bottom: 10px;
+}
