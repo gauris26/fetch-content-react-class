@@ -11,7 +11,7 @@ const ListarPost = () =>{
 
             const response = await fetch('https://jsonplaceholder.typicode.com/posts');
             const data = await response.json();
-            setData(data);
+            setData(data.slice(0, 10));
         } catch (error) {
             console.log(error)
         }

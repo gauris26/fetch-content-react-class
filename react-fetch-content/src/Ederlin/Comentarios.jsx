@@ -10,12 +10,12 @@ export default function Comentarios() {
   useEffect(() => {
     fetch('https://jsonplaceholder.typicode.com/comments')
       .then(response => response.json())
-      .then(data => setComentario(data));
+      .then(data => setComentario(data.slice(0, 10)));
   }, []);
 
   return (
     <div className="fondo">
-      <h2 className="titulo">Comentarios</h2>
+      <h2 className="titulo">Comentarios - Ederlin</h2>
 
       <div className="contenedor">
         {comentario.map(comentario => (
